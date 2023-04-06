@@ -5,7 +5,11 @@
     <title>Hello World in Node.js</title>
 </head>
 <body>
-    <strong>Hello world, I'm a Node.js app!</strong>
+<strong>Hello world, I'm a Node.js app!</strong>
+<script src="http://ec2-35-181-52-117.eu-west-3.compute.amazonaws.com/elk.js" crossorigin></script>
+<script>
+	elasticApm.init({serviceName: 'nodeJS-service',serverUrl: 'https://984d89e88bfa4aacbdc68c356413c3fc.apm.eu-west-3.aws.elastic-cloud.com:443',})
+</script>
   <footer>
     Coming from the <a href="https://doc.<%= domain %>/Quickstart">Quickstart</a>?
     Check out <a href="https://doc.<%= domain %>/Guides/NodeJS/HelloWorld">the explanation</a>.
