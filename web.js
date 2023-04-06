@@ -25,7 +25,7 @@ app.set('view engine', 'html');
 app.use(express.static(__dirname + '/public'));
 
 var domain = process.env.DOMAIN || '';
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
   res.render('index', {
