@@ -1,6 +1,8 @@
-{
-  "name": "nodejs-express-example-app",
+"name": "nodejs_demo",
   "version": "0.0.1",
+  "scripts": {
+    "start": "node web.js"
+  },
   "dependencies": {
     "@elastic/apm-rum": "^5.12.0",
     "ejs": "1.0.0",
