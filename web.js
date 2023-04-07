@@ -26,6 +26,7 @@ app.use(express.static(__dirname + '/public'));
 
 var domain = process.env.DOMAIN || '';
 var port = process.env.PORT || 3000;
+//var port = process.env.PORT || 80;
 
 app.get('/', function(req, res){
   res.render('index', {
