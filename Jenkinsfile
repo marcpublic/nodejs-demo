@@ -2,7 +2,7 @@ pipeline {
    agent any
   
    environment {
-       DOCKER_HUB_REPO = "marcpublic/nodejs"
+       DOCKER_HUB_REPO = "marcpublic/nodejs_demo"
        CONTAINER_NAME = "nodejs"
  
    }
@@ -10,7 +10,7 @@ pipeline {
    stages {
        stage('Checkout') {
            steps {
-               checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/marcpublic/nodejs']]])
+               checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/marcpublic/nodejs-demo']]])
            }
        }
        stage('Build') {
